@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel and Tourism in Thailand - Explore culture, food, and destinations.">
+    <meta name="keywords" content="Thailand, Travel, Tourism, Bangkok, Phuket, Chiang Mai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand Travel & Tourism</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/tour-guide.png" type="image/x-icon">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="hero">
+            <h1>Welcome to Thailand</h1>
+        </div>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#media">Media</a></li>
+                 <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#form">Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <article>
+            <h2>Discover Thailand</h2>
+            <p>Thailand is known for its stunning beaches, vibrant cities, and rich cultural heritage. From Bangkok’s bustling streets to Chiang Mai’s temples, every corner offers something unique. Once you visit the country you will never forget about the experience you had . You will be attatched to the country. </p>
+        </article>
+    </section>
+
+    <!-- CULTURE SECTION  -->
+   <section id="culture">
+    <h2>Thai Culture</h2>
+    <p>Thai culture is deeply respected society for their kindness and politness.Thailand is known for being a buddhist country but the population of muslims is growing</p>
+    <h2>Thai Cuisines</h2>
+
+    <div class="food-gallery">
+        <figure>
+            <img src="images/terayaki.jpg" alt="Terayaki Chicken and StickyRice">
+            <figcaption>Terayaki Chicken and StickyRice</figcaption>
+        </figure>
+        <figure>
+            <img src="images/toast.jpg" alt="Mil Toast House">
+            <figcaption>Mil Toast House</figcaption>
+        </figure>
+        <figure>
+            <img src="images/icecream.jpg" alt="Swensens IceCream">
+            <figcaption>Swensens IceCream</figcaption>
+        </figure>
+    </div>
+
+    <details>
+        <summary>Click to learn more about Thai Festivals</summary>
+        <p>Thailand celebrates Songkran (Thai New Year) with water fights, Loy Krathong with floating lanterns, and many more colorful festivals.</p>
+    </details>
+    <progress value="70" max="100">70%</progress> Popularity among tourists
+</section>
+
+
+    <!-- MEDIA SECTION with video and audio -->
+    <section id="media">
+        <h2>Experience Thailand</h2>
+        <video controls width="750">
+            <source src="videos/experiencethailand.mp4" type="video/mp4">
+            
+        </video>
+          <h3>Thailand's National Anthem</h3>
+    <p><strong>Did you know?</strong> Every day at 6 PM, the national anthem is played in malls, markets, and public places across Thailand. People usually stand still until the anthem finishes. <br>"wait 12secs for the anthem to start" <br> ↓</p>
+        <audio controls>
+            <source src="audios/Thai National Anthem - Phleng Chat Thai (THEN).mp3" type="audio/mpeg">
+        
+        </audio>
+    </section>
+
+
+
+
+<!-- QUIZ SECTION -->
+<section id="quiz">
+  <h2>Test Your Knowledge</h2>
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <div class="question-box">
+      <p>1. What is the capital of Thailand?</p>
+      <label><input type="radio" name="q1" value="Bangkok"> Bangkok</label>
+      <label><input type="radio" name="q1" value="Chiang Mai"> Chiang Mai</label>
+      <label><input type="radio" name="q1" value="Phuket"> Phuket</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-box">
+      <p>2. What is the most popular festival in Thailand?</p>
+      <label><input type="radio" name="q2" value="Songkran"> Songkran</label>
+      <label><input type="radio" name="q2" value="Loy Krathong"> Loy Krathong</label>
+      <label><input type="radio" name="q2" value="Yi Peng"> Yi Peng</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-box">
+      <p>3. What was the old name of Thailand?</p>
+      <label><input type="radio" name="q3" value="Siam"> Siam</label>
+      <label><input type="radio" name="q3" value="Ayutthaya"> Ayutthaya</label>
+      <label><input type="radio" name="q3" value="Lan Na"> Lan Na</label>
+    </div>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+</section>
+
+<section id="quiz">
+  <h2>Self Correcting Quiz</h2>
+  <form id="quizForm">
+    <div class="question-box">
+      <p>What part of Asia is Thailand?</p>
+      <label><input type="radio" name="q1" value="Southeast Asia"> Southeast Asia</label>
+      <label><input type="radio" name="q1" value="South Asia"> South Asia</label>
+      <label><input type="radio" name="q1" value="East Asia"> East Asia</label>
+      <p id="feedback" class="feedback"></p>
+    </div>
+  </form>
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+<section id="form">
+  <h2>Contact Us</h2>
+  <p>If you need help scheduling a plan for Thailand, contact us using the form below.</p>
+  
+  <form id="contactForm">
+    <label for="name">Name (required):</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error" id="nameError"></span>
+
+    <label for="email">Email (required):</label>
+    <input type="email" id="email" name="email" required>
+    <span class="error" id="emailError"></span>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+    <span class="error" id="messageError"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+    
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Thailand Travel & Tourism | Designed By Maria</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
